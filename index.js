@@ -1,10 +1,20 @@
 function isPalindrome(word) {
-  // Write your algorithm here
+  /*Handle main case*/
+  for(let startIdx = 0, endIdx = word.length-1; startIdx < endIdx; ++startIdx, --endIdx){
+    if(word[startIdx] != word[endIdx]){
+      return false;
+    }
+  }
+  return true;
 }
 
 /* 
   Add your pseudocode here
 */
+
+//Using the double pointer method to identify palindromes that will perform the problem in n/2 linear time
+//starting from both ends and moving inwards per iteration step.
+//is palindrome if there are matches in all iterations
 
 /*
   Add written explanation of your solution here
