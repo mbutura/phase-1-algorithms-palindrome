@@ -12,13 +12,21 @@ function isPalindrome(word) {
   Add your pseudocode here
 */
 
-//Using the double pointer method to identify palindromes that will perform the problem in n/2 linear time
-//starting from both ends and moving inwards per iteration step.
-//is palindrome if there are matches in all iterations
+/*
+for(start index, end index; start index < end index; increment start idx, decrement end idx){
+  if letter[start index] != letter[end index]{
+    return fail
+  }
+  return pass
+}
+
+/*
 
 /*
   Add written explanation of your solution here
 */
+
+//Compare each letter from both end . This will run in log(n) time but with a 0.5 constant.
 
 // You can run `node index.js` to view these console logs
 if (require.main === module) {
